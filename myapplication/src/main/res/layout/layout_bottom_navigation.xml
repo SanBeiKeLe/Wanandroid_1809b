@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wanghongli.myapplication.ButtonNavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_button_navigation_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="@+id/home_button_navigation_view">
+      <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:color/darker_gray"
+        />
+    <RadioButton
+        android:id="@+id/main_button_tab_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawableTint="@color/bottom_navation_icon_selector"
+        android:drawableTop="@drawable/ic_home_black_24dp"
+        android:text="@string/main_text_tab_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/main_button_tab_knowledge"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RadioButton
+        android:id="@+id/main_button_tab_knowledge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:drawableTint="@color/bottom_navation_icon_selector"
+        android:drawableTop="@drawable/ic_apps_black_24dp"
+        android:gravity="center"
+        android:text="@string/main_text_tab_knowledge"
+        app:layout_constraintEnd_toStartOf="@+id/main_button_tab_wechat"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/main_button_tab_home"
+        app:layout_constraintTop_toTopOf="@+id/main_button_tab_home" />
+
+    <RadioButton
+        android:id="@+id/main_button_tab_wechat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:drawableTint="@color/bottom_navation_icon_selector"
+        android:drawableTop="@drawable/ic_wechat_black_24dp"
+        android:gravity="center"
+        android:text="@string/main_text_tab_wechat"
+        app:layout_constraintEnd_toStartOf="@+id/main_button_tab_navigation"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/main_button_tab_knowledge"
+        app:layout_constraintTop_toTopOf="@+id/main_button_tab_knowledge" />
+
+    <RadioButton
+        android:id="@+id/main_button_tab_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:drawableTint="@color/bottom_navation_icon_selector"
+        android:drawableTop="@drawable/ic_navigation_black_24dp"
+        android:gravity="center"
+        android:text="@string/main_text_tab_naivagation"
+        app:layout_constraintEnd_toStartOf="@+id/main_button_tab_project"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/main_button_tab_wechat"
+        app:layout_constraintTop_toTopOf="@+id/main_button_tab_wechat" />
+
+    <RadioButton
+        android:id="@+id/main_button_tab_project"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:button="@null"
+        android:drawableTint="@color/bottom_navation_icon_selector"
+        android:drawableTop="@drawable/ic_project_black_24dp"
+        android:gravity="center"
+        android:text="@string/main_text_tab_project"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/main_button_tab_navigation"
+        app:layout_constraintTop_toTopOf="@+id/main_button_tab_navigation" />
+
+
+
+</com.wanghongli.myapplication.ButtonNavigationView>

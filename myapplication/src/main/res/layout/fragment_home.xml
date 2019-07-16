@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_smart_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- <androidx.constraintlayout.widget.ConstraintLayout
+         android:layout_width="0dp"
+         android:layout_height="0dp"
+         app:layout_constraintDimensionRatio="1.6:1"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent">
+
+
+         <androidx.viewpager.widget.ViewPager
+             android:id="@+id/home_top_banner"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" />
+
+
+         <ImageView
+             android:id="@+id/home_banner_bottom_bg"
+             android:layout_width="0dp"
+             android:layout_height="33dp"
+             android:background="#20000000"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent" />
+
+
+         <TextView
+             android:id="@+id/home_banner_title"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="8dp"
+             android:layout_marginLeft="8dp"
+             android:layout_marginEnd="8dp"
+             android:layout_marginRight="8dp"
+             android:ellipsize="end"
+             android:maxLines="1"
+             android:textColor="#fff"
+             android:text="TextView"
+             app:layout_constraintBottom_toBottomOf="@id/home_banner_bottom_bg"
+             app:layout_constraintEnd_toStartOf="@+id/home_banner_indicator"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="@id/home_banner_bottom_bg" />
+
+
+         <jy.com.wanandroid.home.banner.BannerIndicator
+             android:id="@+id/home_banner_indicator"
+             android:layout_width="100dp"
+             android:layout_height="20dp"
+             android:layout_marginEnd="8dp"
+             android:layout_marginRight="8dp"
+             app:layout_constraintBottom_toBottomOf="@id/home_banner_bottom_bg"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintTop_toTopOf="@id/home_banner_bottom_bg" />
+
+
+     </androidx.constraintlayout.widget.ConstraintLayout>
+ -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rlv_Article_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>
