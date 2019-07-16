@@ -71,6 +71,7 @@ public class OrderActivity extends AppCompatActivity {
 
                 mTabBeans.remove(tabBean);
                 //haha
+                Log.d(TAG, "setOnClickListen:嘻嘻嘻 ");
             }
 
             @Override
