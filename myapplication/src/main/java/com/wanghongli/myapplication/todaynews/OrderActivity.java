@@ -70,6 +70,7 @@ public class OrderActivity extends AppCompatActivity {
                 like.add(tabBean);
 
                 mTabBeans.remove(tabBean);
+                //haha
             }
 
             @Override
