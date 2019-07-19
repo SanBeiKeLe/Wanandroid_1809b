@@ -68,7 +68,7 @@ public class OrderActivity extends AppCompatActivity {
                 }
                 mAdapter.list.remove(position);
                 like.add(tabBean);
-                //wewe
+                //weweasas
 
                 mTabBeans.remove(tabBean);
                 //haha
