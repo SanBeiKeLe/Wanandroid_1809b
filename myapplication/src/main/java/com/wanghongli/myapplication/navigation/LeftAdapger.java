@@ -102,7 +102,7 @@ public class LeftAdapger extends RecyclerView.Adapter {
             dataBean1.setChecked(false);
             int a = 0;
             a=3;
-            a = 5;
+            a = 7;
             notifyItemChanged(oldPosition);
         }
         oldPosition = position;
