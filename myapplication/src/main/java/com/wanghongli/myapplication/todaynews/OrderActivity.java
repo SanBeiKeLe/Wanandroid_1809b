@@ -68,8 +68,11 @@ public class OrderActivity extends AppCompatActivity {
                 }
                 mAdapter.list.remove(position);
                 like.add(tabBean);
+                //weweasas
 
                 mTabBeans.remove(tabBean);
+                //haha
+                Log.d(TAG, "setOnClickListen:嘻嘻嘻 ");
             }
 
             @Override

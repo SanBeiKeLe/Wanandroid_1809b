@@ -8,8 +8,11 @@ import com.wanghongli.myapplication.data.entity.HttpResult;
 import com.wanghongli.myapplication.data.entity.User;
 import com.wanghongli.myapplication.data.entity.WxArticleBean;
 import com.wanghongli.myapplication.data.entity.WxTabBean;
+import com.wanghongli.myapplication.navigation.DataBean;
+import com.wanghongli.myapplication.navigation.Navigation;
 import com.wanghongli.myapplication.wxtwo.TabBean;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -51,5 +54,9 @@ public interface ApiService {
 
     @GET("wxarticle/chapters/json")
     Observable<HttpResult<List<TabBean>>> getTab();
+
+
+    @GET("navi/json")
+    Observable<HttpResult<ArrayList<DataBean>>> getNavigation();
 
 }
