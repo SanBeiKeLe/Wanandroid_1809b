@@ -21,7 +21,7 @@ public class LeftAdapger extends RecyclerView.Adapter {
     private static final String TAG = "LeftAdapger";
     private ArrayList<DataBean> mDataList;
     private onClickListen mListen;
-    private int oldPosition=-1;
+    private int oldPosition = -1;
 
     public LeftAdapger(ArrayList<DataBean> dataList) {
         mDataList = dataList;
@@ -66,7 +66,7 @@ public class LeftAdapger extends RecyclerView.Adapter {
                 public void onClick(View v) {
                     int position = (int) mNavigation_left_item_cb_title.getTag();
 
-                    if (position==oldPosition){
+                    if (position == oldPosition) {
                         //重复一直点AItem
                         mNavigation_left_item_cb_title.setChecked(true);
                         return;
@@ -76,7 +76,7 @@ public class LeftAdapger extends RecyclerView.Adapter {
                         mListen.onSelect(position,dataBean);
                    }*/
 
-                    if (oldPosition!=-1){
+                    if (oldPosition != -1) {
                         DataBean dataBean1 = mDataList.get(oldPosition);
                         dataBean1.setChecked(false);
                         notifyItemChanged(oldPosition);
@@ -86,7 +86,7 @@ public class LeftAdapger extends RecyclerView.Adapter {
                     notifyItemChanged(position);
 //                    select(position, true);
 
-                    oldPosition=position;
+                    oldPosition = position;
                 }
             });
 
@@ -97,13 +97,13 @@ public class LeftAdapger extends RecyclerView.Adapter {
     private void select(int position, boolean b) {
         DataBean dataBean = mDataList.get(position);
         dataBean.setChecked(!dataBean.isChecked);
-        if (oldPosition!=-1){
+        if (oldPosition != -1) {
             DataBean dataBean1 = mDataList.get(oldPosition);
             dataBean1.setChecked(false);
-            Log.d(TAG, "select: "+1111);
+            int a = 0;
             notifyItemChanged(oldPosition);
         }
-        oldPosition=position;
+        oldPosition = position;
         notifyItemChanged(position);
     }
 
@@ -111,7 +111,7 @@ public class LeftAdapger extends RecyclerView.Adapter {
 
         void setOnLongClickListener(View view, int position);
 
-        void onSelect(int position , DataBean navigation);
+        void onSelect(int position, DataBean navigation);
     }
 
     public void setonClickListen(onClickListen listen) {
