@@ -1,6 +1,7 @@
 package com.wanghongli.myapplication.navigation;
 
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +18,7 @@ import java.util.ArrayList;
 import java.util.OptionalLong;
 
 public class LeftAdapger extends RecyclerView.Adapter {
+    private static final String TAG = "LeftAdapger";
     private ArrayList<DataBean> mDataList;
     private onClickListen mListen;
     private int oldPosition=-1;
@@ -98,7 +100,7 @@ public class LeftAdapger extends RecyclerView.Adapter {
         if (oldPosition!=-1){
             DataBean dataBean1 = mDataList.get(oldPosition);
             dataBean1.setChecked(false);
-            //xzxz
+            Log.d(TAG, "select: "+111);
             notifyItemChanged(oldPosition);
         }
         oldPosition=position;
