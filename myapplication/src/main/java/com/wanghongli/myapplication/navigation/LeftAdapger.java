@@ -1,3 +1,4 @@
+
 package com.wanghongli.myapplication.navigation;
 
 
@@ -103,6 +104,8 @@ public class LeftAdapger extends RecyclerView.Adapter {
             int a = 0;
             a=3;
             a = 7;
+            a = 3;
+            a = 4;
             notifyItemChanged(oldPosition);
         }
         oldPosition = position;
