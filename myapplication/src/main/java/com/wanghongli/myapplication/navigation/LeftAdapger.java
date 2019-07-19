@@ -101,6 +101,7 @@ public class LeftAdapger extends RecyclerView.Adapter {
             DataBean dataBean1 = mDataList.get(oldPosition);
             dataBean1.setChecked(false);
             int a = 0;
+            a = 5;
             notifyItemChanged(oldPosition);
         }
         oldPosition = position;
