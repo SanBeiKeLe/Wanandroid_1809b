@@ -71,6 +71,7 @@ subDeps.rxJavaX = rxjavaXMap
 def otherMap = [:]
 otherMap.smartRefreshLayout = "com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-16"
 otherMap.smartRefreshHeader = "com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-16"
+otherMap.tagFlowLayout = "com.hyman:flowlayout-lib:1.1.2"
 
 subDeps.other = otherMap
 
