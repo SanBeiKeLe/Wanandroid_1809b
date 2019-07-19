@@ -100,7 +100,7 @@ public class LeftAdapger extends RecyclerView.Adapter {
         if (oldPosition!=-1){
             DataBean dataBean1 = mDataList.get(oldPosition);
             dataBean1.setChecked(false);
-            Log.d(TAG, "select: "+111);
+            Log.d(TAG, "select: "+1111);
             notifyItemChanged(oldPosition);
         }
         oldPosition=position;
